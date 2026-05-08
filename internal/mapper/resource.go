@@ -1,7 +1,12 @@
 package resource
 
 import "time"
-type CloudProvider string
+type CloudProvider string 
+const (
+	AWS CloudProvider = "aws"
+	AZURE CloudProvider = "azure"
+	GCP   CloudProvider = "gcp"
+)
 type ResourceType struct {
 	ID         string
 	Name       string
